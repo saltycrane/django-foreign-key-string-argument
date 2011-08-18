@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Tim(models.Model):
+    name = models.CharField(max_length=255)
+    model = models.ForeignKey('myapp2.Mod')
